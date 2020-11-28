@@ -1,0 +1,144 @@
+%!TEX program = xelatex
+% 完整编译: xelatex -> bibtex -> xelatex -> xelatex
+\documentclass[lang=cn,11pt,a4paper,cite=super,AutoFakeBold,chinesefont=founder]{elegantpaper}
+
+\title{不同给药途径对药物作用的影响及苯巴比妥钠的抗惊厥作用}
+\author{崔暖}
+\institute{（湖北民族大学\ 医学部，湖北恩施\ 445000）\vspace*{-3em}}
+\date{}
+
+\usepackage{array}
+\newcommand{\ccr}[1]{\makecell{{\color{#1}\rule{1cm}{1cm}}}}
+\usepackage{siunitx}
+\usepackage[version=4]{mhchem}		% 化学公式
+\usepackage{makecell}				%表格内换行
+
+\newcommand{\cnabs}{\noindent{\small \textsf{摘要}}\quad}
+\newcommand{\cnkys}{\noindent{\small \textsf{关键词}}\quad}
+\newcommand{\enabs}{\noindent{\textbf{Abstract}\quad}}
+\newcommand{\enkys}{\noindent{\textbf{Key Words}\quad}}
+
+% 正文区
+\begin{document}
+\maketitle
+
+\renewcommand{\abstractname}{}
+
+% 摘要
+\begin{onecolabstract}
+\cnabs
+目的：观察不同给药途径对药物作用的影响，探讨苯巴比妥钠的抗惊厥作用。%
+方法：取3只小鼠，分为给药途径实验组，对比灌胃给药和腹腔注射给药的效果。取2只小鼠，分为抗惊厥实验组，对比苯巴比妥钠和生理盐水的抗惊厥效果。%
+结果：给药途径实验中，进行灌胃的甲鼠，仅肌肉张力降低、呼吸减慢加深，进行腹腔注射的乙鼠和丙鼠，则四肢瘫痪、呼吸抑制。抗惊厥实验中，注射苯巴比妥钠的A鼠未发生惊厥，注射生理盐水的B鼠产生了明显的惊厥反应。%
+结论：腹腔注射比灌胃的药效更强，产生更快；氯化钙可以减弱硫酸镁对小鼠的药效，\ce{Mg2^+}和 \ce{Ca2^+}有拮抗作用；苯巴比妥钠具有明显的抗惊厥作用。%
+
+\cnkys
+给药途径;\ 药物作用;\ 苯巴比妥钠;\ 惊厥
+\end{onecolabstract}
+
+% 引言
+硫酸镁口服给药吸收很少，\ce{Mg2^+}和 \ce{Ca2^+}在肠道难被吸收\cite{cn2}，产生的肠内容物呈高渗状态，抑制肠内水分的吸收，刺激肠道蠕动，有泻下和利胆作用。硫酸镁注射给药，可以很快产生作用。\ce{Mg2^+}能够抑制中枢及外周神经系统，使骨骼肌、心肌、血管平滑肌松弛，\ce{Ca2^+}可以和 \ce{Mg2^+}互相拮抗，减弱 \ce{Mg2^+}的松弛肌肉和降压作用。惊厥是中枢神经兴奋过度的一种症状，表现为全身骨骼肌不自主地强烈收缩。尼可刹米可以直接兴奋延髓呼吸中枢，大剂量使用会过度兴奋大脑皮质和脊髓引起惊厥，甚至导致死亡。苯巴比妥钠能够增强 \ce{GABA}介导的 \ce{Cl-}内流和减弱谷氨酸介导的去极化，具有抗惊厥作用\cite{cn1}。
+
+% 1
+\section{材料与方法}
+
+% 1.1
+\subsection{动物}
+
+小白鼠6只，雄雌均有，体重($23 \pm 1$)g。
+
+% 1.2
+\subsection{药品与器材}
+
+10\% 硫酸镁溶液，2\% 氯化钙溶液，5\% 苯巴比妥钠，5\% 尼
+可刹米；\SI{1}{mL} 注射器，针头(5号)，小白鼠灌胃针头，小动物电子秤，小鼠笼。
+
+% 1.3
+\subsection{方法}
+
+% 1.3.1
+\subsubsection{称重及分组编号}
+
+使用小动物电子秤将5只小白鼠分别称重，分为两个实验组。不同途径给药实验组3只，分别命名为甲、乙、丙鼠，抗惊厥实验组2只，分别命名为 A、B鼠。
+
+% 1.3.2
+\subsubsection{配制药物及给药}
+
+根据小白鼠的不同体重，为其配制适量的药物溶液。不同途径给药实验组中，甲鼠灌胃10\%硫酸镁溶液\SI{0.2}{mL/10g}，乙鼠、丙鼠腹腔注射10\%硫酸镁溶液\SI{0.2}{mL/10g}。给药后观察反应，当丙鼠发生肌肉松弛、呼吸抑制时，立即腹腔注射2\%氯化钙溶液\SI{0.2}{mL/10g}。抗惊厥实验中，A鼠腹腔注射0.5\%苯巴比妥钠\SI{0.1}{mL/10g}，B鼠腹腔注射生理盐水\SI{0.1}{mL/10g}。\SI{15}{min}后，两鼠同时皮下注射5\%尼可刹米\SI{0.1}{mL/10g}。
+
+% 2
+\section{结果}
+
+% 2.1
+\subsection{不同途径给药对小鼠的作用}
+
+通过不同途径投用硫酸镁后，3只小鼠均出现骨骼肌张力降低至四肢软瘫、呼吸加深减慢的反应。其中甲鼠灌胃给药后，中毒症状出现较慢，中毒反应较小。乙鼠、丙鼠则很快就出现肌肉松弛、四肢瘫痪、呼吸抑制等较强的中毒反应。当 丙鼠出现中毒反应后，立即为其注射 2\%氯化钙溶液\SI{0.2}{mL/10g}进行解毒，观察到小鼠的骨骼肌张力逐渐增强，可以缓慢行走，呼吸逐渐恢复正常；没有注射2\%氯化钙溶液\SI{0.2}{mL/10g}的乙鼠在症状出现不久后就死亡。不同途径给药的小鼠存 活情况见表\ref{tabular:1}。
+
+\begin{table}[!ht]
+\caption{不同途径给药的小鼠存活情况}
+	\centering
+	\begin{tabular}{*5{c}}
+	\toprule
+	鼠号 & 药物 & 给药途径 & 死亡率 & 存活率 \\
+	\midrule
+	甲 & \makecell[c]{10\%硫酸镁溶液 \\ (\SI{0.2}{mL/10g} 体重)} & 灌胃 	& 0\% 	& 100\% \\
+	乙 & \makecell[c]{10\%硫酸镁溶液 \\ (\SI{0.2}{mL/10g} 体重)} & 腹腔注射 & 100\% & 0\% \\
+	丙 & \makecell[c]{10\%硫酸镁溶液 \\ (\SI{0.2}{mL/10g} 体重)} & 腹腔注射 & 62.5\% & 37.5\% \\
+	\bottomrule
+	\label{tabular:1}
+	\end{tabular}
+\end{table}
+
+%2.2
+\subsection{苯巴比妥钠的抗惊厥作用}
+
+在A鼠和B鼠同时注射 5\%尼可刹米\SI{0.1}{mL/10g}后，A鼠和B鼠都间歇性地发生了躁动反应。其中A鼠起初不停地跑动，随后安定下来，身体逐渐变得虚弱，未发生明显的惊厥反应；B 鼠在注射 5\%尼可刹米\SI{11}{min}后突然变得暴躁，产生了跳跃、尖叫、竖尾、咬齿等明显的惊厥反应。注射不同药物的小鼠惊厥与死亡情况见表\ref{tabular:2}。
+
+\begin{table}[!ht]
+\caption{注射不同药物的小鼠惊厥与死亡情况}
+	\centering
+	\begin{tabular}{*4{c}}
+	\toprule
+	鼠号 & 药物               & 惊厥率(\%) & 死亡率(\%) \\
+	\midrule
+	A & \makecell[c]{0.5\%苯巴比妥钠溶液 \\ (\SI{0.1}{mL/10g} 体重)} & 0\% 		& 0\% \\
+	B & \makecell[c]{生理盐水 \\ (\SI{0.1}{mL/10g} 体重)}           & 100\%   & 0\% \\
+	\bottomrule
+	\label{tabular:2}
+	\end{tabular}
+\end{table}
+
+% 3
+\section{讨论}
+
+\ce{Mg2^+} 在肠道内很难被吸收，通过硫酸镁灌胃给药，小鼠吸收的药物较少，而通过腹腔注射给药，\ce{Mg2^+} 直接进入了血管。故注射给药能使药物的效果增强，作用时间缩短。
+
+尼可刹米诱发小鼠惊厥是目前较常用的一种建立惊厥模型的方法，尼可刹米可以通过激活 \ce{5-HT_{2A}} 受体，从而改变大脑皮层神经元 \ce{Mg2^+} 通道的动力学特征，增强皮层神经元的 \ce{Na2^+} 电流，兴奋中枢神经系统\cite{cn3}。也可通过活性氧使得 \ce{Na2^+} 通道构象发生改变，提高中枢神经系统的兴奋性。而 苯巴比妥钠能够增强 \ce{GABA} 介导的 \ce{Cl-} 内流和减弱谷氨酸介导的去极化，大剂量使用具有明显 的抗惊厥作用。
+
+% 参考文献
+\bibliography{paper}
+
+% 英文标题
+\begin{center}
+    \Large
+    The effect of different administration routes on the action of drugs and the anticonvulsant effect of phenobarbital sodium
+    \\[8pt]
+    \normalsize
+    Cui Nuan
+    \\[8pt]
+    \small
+    (Medical School, HuBei MinZu University, Enshi, Hubei Province, 445000 China)
+\end{center}
+
+% 英文摘要
+\enabs
+\textbf{Objective: }To observe the effects of different administration routes on the effects of drugs, and to explore the anticonvulsant effects of phenobarbital sodium. %
+\textbf{Methods: }Three mice were divided into experimental group, Compare the effects of intragastric administration and intraperitoneal injection. Two mice were divided into anticonvulsant experimental groups, Compare the anticonvulsant effects of phenobarbital sodium and normal saline. %
+\textbf{Results: }In the first group, only the muscle tension of the rats given by gavage decreased and the breathing slowed and deepened. The rats and C rats received intraperitoneal injection had quadriplegia and respiratory depression. In the second group, the A mouse injected with phenobarbital sodium did not have convulsions, while the B mouse injected with normal saline had obvious convulsions. %
+\textbf{Conclusion: }Intraperitoneal injection is more effective and faster than gavage. \ce{Mg2^+} and \ce{Ca2^+} have an antagonistic effect. Phenobarbital sodium has anticonvulsant effects. %
+
+% 英文关键词
+\enkys
+Administration route; drug effect; phenobarbital sodium; convulsion
+
+\end{document}
